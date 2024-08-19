@@ -14,7 +14,7 @@ import Music from './pages/music';
 const route = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<App />}>
-            <Route path='music/:musicId' element={<Music />} />
+            <Route path='music/' element={<Music />} />
         </Route>,
     ),
 );
