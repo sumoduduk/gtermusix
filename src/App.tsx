@@ -34,7 +34,7 @@ function App() {
     // }
 
     return (
-        <div className='flex w-screen h-screen bg-stone-900 text-gray-100'>
+        <div className='flex w-screen h-screen bg-stone-950 text-gray-100'>
             <Sidebar playlistStore={playlistStore} />
             <Outlet
                 context={
