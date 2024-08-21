@@ -19,9 +19,6 @@ const AddPlaylist = () => {
         if (!data_playlist) return;
         const name = formData.get('name') as string | null;
 
-        console.log('id', id);
-        console.log('name', name);
-
         const name_playlist = name ? name : data_playlist.title;
 
         for (const vidObj of data_playlist.videos) {
