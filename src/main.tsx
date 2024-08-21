@@ -11,10 +11,12 @@ import {
 } from 'react-router-dom';
 import Music from './pages/music';
 import AddPlaylist from './pages/add_playlist';
+import Playlist from './pages/playlist';
 
 const route = createBrowserRouter(
     createRoutesFromElements(
         <Route path='/' element={<App />}>
+            <Route path='playlist/:playlistId' element={<Playlist />} />
             <Route path='add-playlist' element={<AddPlaylist />} />
         </Route>,
     ),
