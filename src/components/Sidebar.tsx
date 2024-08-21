@@ -26,9 +26,9 @@ const Sidebar = ({ playlistStore }: { playlistStore: LocalForage }) => {
         setPlaylistName(filtered);
     };
 
-    useEffect(() => {
-        getPl();
-    }, []);
+    // useEffect(() => {
+    //     getPl();
+    // }, []);
 
     return (
         <div className='w-1/3 h-screen overflow-scroll border-white border'>
@@ -36,13 +36,7 @@ const Sidebar = ({ playlistStore }: { playlistStore: LocalForage }) => {
             <Link to='/add-playlist'>+ Add Playlist</Link>
             <hr />
 
-            {playlistName.length > 0 && (
-                <ul>
-                    {playlistName.map((plName) => (
-                        <li>plName</li>
-                    ))}
-                </ul>
-            )}
+            <Link to='/playlist/1'>Playlist</Link>
         </div>
     );
 };
